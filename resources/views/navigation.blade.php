@@ -11,12 +11,13 @@
           <a class="nav-link" href="{{route('listado_libros')}}">Libros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Editorial</a>
+          <a class="nav-link" href="{{route('listado_editorial')}}">Editorial</a>
         </li>
      
       </ul>
     </div>
     
   </div>
+
   
 </nav>
