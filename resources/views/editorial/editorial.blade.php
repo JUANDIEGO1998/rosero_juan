@@ -25,6 +25,7 @@
             <td> {{ $c->direccion }}</td>
             <td> {{ $c->ciudad }}</td>
             <td> {{ $c->telefono }}</td>
+           <td> <a href="{{route('actualiza_editor', $c->id)}}" class="btn btn-secondary">Actualizar</a></td>
            </tr>
         
     @endforeach
