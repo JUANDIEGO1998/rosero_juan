@@ -20,3 +20,4 @@ Route::get('/', [Principal::class, 'index']);
 Route::get('/listar/libros', [libros::class, 'index'])->name('listado_libros'); 
 Route::get('/listar/editorial', [Editorial::class, 'index'])->name('listado_editorial');
 Route::get('/listar/formulario/editorial', [Editorial::class, 'registro'])->name('registro_editorial');
+Route::post('/formulario/registro', [Editorial::class, 'registros'])->name('registro_edit');

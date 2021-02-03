@@ -16,4 +16,24 @@ class Editorial extends Controller
     public function registro(){
         return view('editorial.formeditorial');
     }
+    public function formulario(){
+
+        return view('editorial.formeditorial');
+    }
+
+        public function registros(Request $request)
+    {
+        
+        $category = new Editoriales();
+        $category->nombre = $request->input('nombre');
+        $category->direccion = $request->input('direccion');
+        $category->ciudad = $request->input('ciudad');
+        $category->telefono = $request->input('telefono');
+       
+        $category->save();
+        return redirect()->route('listado_editorial');
+    }
+        
+    
+
 }
